@@ -1,11 +1,17 @@
 <template>
   <div>
-      <h1>Привет, курс!</h1>
+    <h1>Привет, курс!</h1>
   </div>
 </template>
 
-<style lang='scss' scoped>
+<script>
+export default {
+  name: 'About',
+};
+</script>
+
+<style lang="scss" scoped>
 h1 {
-    color: crimson;
+  color: crimson;
 }
 </style>
