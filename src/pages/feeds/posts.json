@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "avatar": "https://picsum.photos/300/300",
+        "username": "Josh"
+    },
+    {
+        "id": 1,
+        "avatar": "https://picsum.photos/300/300",
+        "username": "Andrew"
+    },
+    {
+        "id": 2,
+        "avatar": "https://picsum.photos/300/300",
+        "username": "Camille"
+    },
+    {
+        "id": 3,
+        "avatar": "https://picsum.photos/300/300",
+        "username": "Marselle"
+    }
+]

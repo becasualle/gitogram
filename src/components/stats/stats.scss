@@ -1,0 +1,35 @@
+.stats {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+
+    &__stars, &__forks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title {
+            min-width: 75px;
+            background: #FAFBFC;
+            display: flex;
+            align-items: center;
+            p {
+                text-align: center;
+            }
+            .icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &__value {
+            min-width: 55px;
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

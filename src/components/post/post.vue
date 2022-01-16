@@ -1,38 +1,41 @@
 <template>
   <div class="post">
-    My post component
+    <!-- аватар и имя пользователя -->
     <div class="post__user mb-16">
-      <!-- <user :src="avatar_url" :name="username"/> -->
+      <user :avatar="avatar" :username="username" />
     </div>
+    <!-- слот под контент поста -->
     <div class="post__card mb-16">
       <slot name="card" />
     </div>
-    <toggle @onToggle="toggleClick" />
+    <!--  -->
+    <!-- тогглер комментариев -->
+    <toggler @onToggle="toggleClick" />
     <div v-if="showComment">
-      <ul class="post__comment comment__list">
-        <li v-for="item in 5" :key="item" class="comment__item">
+      <ul class="post__comment comment__list mt-12 mb-12">
+        <li v-for="item in 3" :key="item" class="comment__item">
           <p>
-            <span class="comment__user"> User name </span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Necessitatibus recusandae dolore facere quas consequuntur repellat
-            fuga ratione quia, quidem sapiente est cupiditate. Culpa, sequi?
-            Veniam quia aliquid ducimus repellat voluptatem!
+            <span class="comment__user"> Marselle </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestias.
           </p>
         </li>
       </ul>
-    </div>
+    </div> 
+
   </div>
 </template>
 
 <script>
-import { toggle } from '../toggle';
-// import {user} from "@components/user"
+import { user } from "../user";
+import {toggler} from "../toggler";
+
 export default {
   components: {
-    toggle,
+    user,
+    toggler
   },
   props: {
-    avatar_url: {
+    avatar: {
       type: String,
       default: '',
     },
@@ -54,4 +57,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" src="./post.scss" scoped>
+</style>
